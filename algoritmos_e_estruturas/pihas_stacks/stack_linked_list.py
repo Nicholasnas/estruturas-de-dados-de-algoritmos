@@ -13,7 +13,7 @@ class StackLinked:
     def push(self, data):
         new_node = Node(data)
         
-        """Verificar se a pulha é vazia, caso seja adiciona no head da stack"""
+        """Verificar se a pilha é vazia, caso seja adiciona no head da stack"""
         if not self.head:
             self.head = new_node
             print('Add in start')
@@ -34,7 +34,7 @@ class StackLinked:
         return 
     
     def peek(self):
-        """Return the rop element"""
+        """Return the top element"""
         if not self.head:
             print('Stack empty')
             return

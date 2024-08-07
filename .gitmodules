@@ -1,0 +1,3 @@
+[submodule "estudos_cpp"]
+	path = estudos_cpp
+	url = https://github.com/Nicholasnas/estudos_cpp.git
