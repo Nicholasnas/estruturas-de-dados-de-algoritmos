@@ -11,8 +11,6 @@ struct pedra{
     bool escolhida;
 };
 
-
-
 void escolhe_pedras_gulosa(pedra pedras[], int n, int cap_peso, int cap_volume){
 	for(int i=0; i<n; i++){
 		if(pedras[i].peso <= cap_peso && pedras[i].volume <= cap_volume){
