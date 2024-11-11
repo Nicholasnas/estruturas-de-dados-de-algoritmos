@@ -16,7 +16,7 @@ int main()
 	int ans=0;
 	for(int i=10;i>0;i--){
 		// quantas vezes tirar o numero da resposta
-		// n cabe em fat [i]	jjj
+		// n cabe em fat [i]
 		int at = n/fatorial[i];
 		ans += at;
 		n -= at*fatorial[i];
