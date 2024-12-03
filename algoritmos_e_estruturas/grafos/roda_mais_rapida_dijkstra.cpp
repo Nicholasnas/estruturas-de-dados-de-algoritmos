@@ -56,7 +56,6 @@ int dijkstra(list<Aresta>grafo[], int vertices, int start, int end){
     return distancia[end];
 		
 }
-
 int main(){
 	int vertices, origem, peso, destino, arestas;
     int start, end;

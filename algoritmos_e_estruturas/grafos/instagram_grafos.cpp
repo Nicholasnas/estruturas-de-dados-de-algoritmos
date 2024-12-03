@@ -14,6 +14,7 @@ int main(){
     int usuarios;
     int origem, destino;
     int pessoa;
+
     cin >> usuarios ;
     cin.ignore();
     string nomes[usuarios];
@@ -22,7 +23,7 @@ int main(){
     list<No>::iterator it;
 
     // Entrada dos nomes dos usuarios
-    for(int i=0;i<usuarios;i++){
+    for(int i=0; i<usuarios; i++){
         getline(cin, nomes[i]);
     }
 
