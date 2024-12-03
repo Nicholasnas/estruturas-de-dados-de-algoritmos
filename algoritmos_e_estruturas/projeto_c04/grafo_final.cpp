@@ -1,8 +1,7 @@
 #include <iostream>
 #include <list>
-#include <string>
 #include <cmath>
-#include <iterator>
+
 
 using namespace std;
 
