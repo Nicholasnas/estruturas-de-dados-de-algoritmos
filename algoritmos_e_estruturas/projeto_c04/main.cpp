@@ -2,6 +2,7 @@
 #include <list>
 #include <cmath>
 #include <string>
+#include <iterator>
 
 
 using namespace std;
@@ -73,7 +74,6 @@ void adicionar_palavra(list<Dicionario>& dicionario, int& contador) {
     list<Dicionario>::iterator it;
 
     for (it = dicionario.begin(); it != dicionario.end(); it++) {
-
         if(it->id != nova_entrada.id && calcular_distancia_grafo(it->palavra, nova_palavra) < 10){
             it->palavra.conexoes.push_back(nova_entrada.id);
             nova_entrada.palavra.conexoes.push_back(it->id);
@@ -107,7 +107,7 @@ void mostrar_conexoes(list<Dicionario>& dicionario) {
     cout << "Conexoes no grafo:" << endl;
     // Percorrer o dicionario para mostrar as conexoes entre
     for (it = dicionario.begin(); it != dicionario.end(); it++) {
-        cout << "Palavra: " << it->palavra.palavra_ficticia << " conecta com: ";
+        cout << "Palavra " << it->palavra.palavra_ficticia << " conecta com: ";
         // Percorrendo a lista de conexoes de uma certa palavra
         for (conexao = it->palavra.conexoes.begin(); conexao != it->palavra.conexoes.end(); conexao++) {
             // Percorrer o dicionario para palavras conectadas 
@@ -271,8 +271,7 @@ Palavra_Tree nova_palavra(){
     getline(cin, palavra.palavraFicticia);
     cout << "Significado: ";
     getline(cin, palavra.significado);
-    cin.ignore();
-    
+   
     cout << "Entre com as coordenadas (x, y, z): " << endl;
     cout << "Coordenada x: ";
     cin >> palavra.x;
