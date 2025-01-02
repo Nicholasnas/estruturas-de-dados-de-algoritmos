@@ -1,0 +1,34 @@
+Contexto:
+
+Em um reino distante, um dragão amigável foi capturado e preso no labirinto de um terrível vilão.
+O herói do reino, Sir Code-a-lot, precisa encontrar o caminho mais curto através do labirinto para 
+resgatar o dragão. O labirinto é representado como um grafo, onde cada sala é um vértice e os corredores 
+são as arestas que conectam estas salas. Sir Code-a-lot pode se mover de uma sala para outra se existir um 
+corredor direto entre elas. Ajude Sir Code-a-lot a determinar o menor caminho entre a entrada do labirinto 
+e a sala onde o dragão está preso.
+
+Entrada e Limites:
+
+A primeira linha contém dois inteiros, N e M, representando o número de salas (1 ≤ N ≤ 1000) 
+e o número de corredores.
+As próximas M linhas descrevem os corredores, cada uma contendo dois inteiros u e v (1 ≤ u, v ≤ N), 
+indicando um corredor que conecta as salas u e v.
+A última linha contém dois inteiros, S e D, representando a sala de entrada e a sala onde o dragão
+está preso, respectivamente.
+Saída e Limites:
+
+Imprima o número de salas no menor caminho da sala S até a sala D, incluindo a entrada e a sala do dragão.
+Se não houver caminho possível, imprima "IMPOSSIVEL".
+
+Entrada
+6 7
+1 2
+1 3
+2 4
+3 4
+4 5
+5 6
+4 6
+1 6
+Saída:
+4

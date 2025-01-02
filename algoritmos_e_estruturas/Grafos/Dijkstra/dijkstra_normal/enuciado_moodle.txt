@@ -1,0 +1,49 @@
+Entrada
+A entrada consiste de várias linhas:
+- A primeira linha contém 4 inteiros: 
+
+  * o primeiro corresponde ao número de vértices do grafo. Você pode considerar que o grafo terá 
+  no máximo 10 vértices.
+
+  * o segundo define se o grafo é orientado (1) ou não orientado (0)
+
+  * o terceiro identifica o vértice inicial do caminho
+
+  * o quarto identifica o vértice de destino 
+
+- As demais linhas contêm três inteiros, que correspondem ao vértice de origem, 
+o ´vertice de destino e o peso de cada aresta do grafo, respectivamente. 
+A entrada de dados termina quando ocorrer uma linha com três números iguais 
+a -1 (esta não deve ser inserida no grafo).
+
+Saída
+A saída deverá mostrar o caminho de menor custo para sair do vértice inicial ao vértice de destino, 
+como no exemplo abaixo.
+
+
+Exemplo de entrada         
+5 1 0 2
+0 1 10
+0 4 5
+1 2 1 
+1 4 2
+2 3 4
+3 0 7
+3 2 6
+4 1 3
+4 2 9
+4 3 2
+-1 -1 -1
+Exemplo de saída
+Menor caminho: 0 4 1 2
+Custo: 9
+
+
+
+
+
+
+
+
+
+

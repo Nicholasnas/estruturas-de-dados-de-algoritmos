@@ -1,0 +1,30 @@
+Soebad desenvolveu um sistema de visão computacional que identifica algumas características das tortas.
+Ele quer usar esses dados para tomar decisões mais assertivas na hora fazer as vendas.
+
+Inicialmente, dada uma imagem da torta, ele consegue identificar alguns pontos: 
+As extremidades esquerda e direita da borda da torta e as extremidades esquerda e direita da 
+circunferência da base da torta. A figura abaixo mostra essas características:
+
+Dados as coordenadas desses pontos, ele quer saber qual é a espessura da massa, 
+o diâmetro e a altura da torta. Considere que o diâmetro da circunferência da base é o mesmo 
+do topo e a altura da torta é calculada a partir da base até o topo da torta.
+
+Entrada
+A entrada é composta por quatro linhas. Em cada linha são informadas as coordenadas x e y 
+de cada um dos pontos A, B, C e D, respectivamente.
+
+Saída
+O programa deve informar três linhas contendo os valores inteiros da espessura da massa, 
+do diâmetro e da altura da torta.
+
+
+Exemplo de entrada     
+1 10
+2 10
+1 2
+22 2
+
+Exemplo de saída     
+1
+21
+8

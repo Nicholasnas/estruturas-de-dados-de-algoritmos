@@ -1,0 +1,28 @@
+Contexto:
+Uma empresa de logística deseja encontrar a rota mais rápida para entregar um pacote entre 
+duas cidades em uma rede que conecta várias cidades. O objetivo é minimizar o tempo total de entrega.
+
+Entrada:
+A primeira linha contém dois inteiros, N e M, o número de cidades e o número de estradas, 
+respectivamente. As próximas M linhas descrevem as estradas com três inteiros cada, u, v, e t, 
+indicando uma estrada entre a cidade u e a cidade v com um tempo de viagem t. 
+A última linha contém dois inteiros, A e B, representando a cidade de origem e destino.
+
+Saída:
+O tempo mínimo de viagem de A para B.
+
+Exemplo de entrada         
+5 7
+1 2 2
+1 3 4
+2 3 1
+2 4 7
+3 4 3
+3 5 1
+4 5 5
+1 5	
+
+Exemplo de saída
+4
+
+

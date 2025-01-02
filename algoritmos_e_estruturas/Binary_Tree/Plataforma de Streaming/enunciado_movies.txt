@@ -1,0 +1,70 @@
+Você está trabalhando em uma nova rede de streaming, e para organizar os filmes na plataforma, 
+decidiu utilizar uma árvore binária de busca ordenada pelos nomes dos filmes. Faça um programa que 
+insira o nome, gênero, duração em minutos, classificação de idade e ano de cada filme na árvore, e que, 
+dado o nome de um determinado filme, faça uma pesquisa e mostre as informações do mesmo.
+
+Entradas
+A entrada terá 3 opções: 1 para inserir um filme, 2 para pesquisar um filme por nome e 0 para sair do programa.
+ Ao escolher a opção 1, o usuário deve entrar com o nome, gênero, duração, classificação e ano do filme. 
+ Para a opção 2, entrar apenas com o nome do filme que deseja pesquisar.
+
+Saída
+Quando um filme for pesquisado, se ele estiver na árvore, mostre todas as suas informações, se não, 
+mostre a mensagem "Filme nao encontrado". Adicionalmente, se um usuário entrar com uma opção que não seja 
+uma das três anteriores, mostre a mensagem "Operação inválida".
+
+
+Exemplo de entrada                               
+1
+Hereditario
+Terror
+127
+16
+2018
+1
+Aniquilacao
+Terror
+115
+14
+2018
+1
+Maze Runner - Correr ou Morrer
+Acao
+114
+14
+2014
+1
+O Preco do Amanha
+Sci-fi
+109
+12
+2011
+1
+Ex_machina - Instinto Artificial
+Sci-fi
+108
+14
+2015
+2
+Aniquilacao
+4
+2
+Forrest Gump
+2
+Ex_machina - Instinto Artificial
+0
+
+Exemplo de saída     
+Nome: Aniquilacao
+Genero: Terror
+Duracao: 115 mins
+Classificacao: 14
+Ano: 2018
+Operacao invalida
+Filme nao encontrado
+Nome: Ex_machina - Instinto Artificial
+Genero: Sci-fi
+Duracao: 108 mins
+Classificacao: 14
+Ano: 2015
+

@@ -1,0 +1,31 @@
+Contexto
+No reino de Dataland, os dados são organizados em estruturas mágicas chamadas Árvores Binárias de Busca (BST).
+Você, um mago dos dados, recebeu uma tarefa especial: gerenciar essas árvores, inserindo, 
+removendo e verificando a presença de elementos. Você precisa garantir que os elementos possam ser adicionados
+e removidos eficientemente e que, após a remoção, eles realmente desapareçam da árvore.
+Este exercício simulará estas operações para testar suas habilidades de manipulação da BST.
+
+Entradas
+Número de Operações (N): O primeiro número inteiro na entrada (1 ≤ N ≤ 100) indica quantas operações serão realizadas.
+Operações: Cada uma das próximas N linhas descreve uma operação e pode ser de três tipos:
+i x: Insere o inteiro x na árvore binária (onde -10^9 ≤ x ≤ 10^9).
+r x: Remove o inteiro x da árvore binária.
+b x: Busca o inteiro x na árvore binária e retorna se o elemento ainda está presente ou não.
+Saída
+Para cada operação de busca (b x), imprima "Sim" se o elemento x ainda está presente na árvore após 
+as operações de inserção e remoção, e "Não" se o elemento foi removido com sucesso e não está mais presente.
+
+Exemplo de entrada                               
+7
+i 50
+i 30
+i 70
+r 30
+b 30
+b 50
+b 70
+
+Exemplo de saída:     
+Não
+Sim
+Sim

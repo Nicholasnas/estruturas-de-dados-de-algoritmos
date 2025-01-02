@@ -1,0 +1,64 @@
+Uma árvore geradora mínima para um grafo G, ponderado, não direcionado e conexo, é um subconjunto das arestas 
+que G que mantém o grafo conexo, e cuja soma dos pesos das arestas é p menor possível.
+
+Dentre os algoritmos que resolvem este problema, temos o de Prim, que coloca um vértice inicial na árvore e vai 
+adicionando as arestas de menor custo entre um vértice inicial na árvore e outro fora dela, 
+até que todos os vértices estejam conectados.
+
+Faça um programa que leia dos dados dos vértices e arestas de um grafo e os armazene em uma lista de adjacências. 
+Depois o programa deve mostrar a sua árvore geradora mínima.
+
+Faça uma função para implementar o algoritmo de Prim. O cabeçalho desta função deve ser:
+void prim(list<no>adj[], int nVertices, int start)
+
+Entrada
+A entrada consiste de várias linhas:
+A primeira linha contém 3 inteiros: 
+
+- o primeiro corresponde ao número de vértices do grafo. Você pode considerar que o grafo terá no máximo 10 vértices.
+
+- o segundo define se o grafo é orientado (1) ou não orientado (0)
+
+- o terceiro identifica o vértice inicial da árvore
+
+As demais linhas três inteiros, que correspondem ao vértice de origem, o ´vertice de destino e o peso de cada aresta, 
+respectivamente. A entrada de dados termina quando ocorrer uma linha com três números iguais a -1 (esta não deve ser inserida no grafo).
+
+Saída
+A saída deverá mostrar as arestas que constituem a árvore geradora mínima, bem como o custo total dela, como no exemplo abaixo.
+
+Exemplo de entrada         
+9 0 0
+0 1 4
+0 7 8
+1 2 8 
+1 7 11
+2 3 7
+2 5 4
+2 8 2
+3 4 9
+3 5 14
+4 5 10
+5 6 2
+6 7 1
+6 8 6
+7 8 7
+-1 -1 -1	
+
+Exemplo de saída:
+Arvore Geradora Minima:
+0 1
+1 2
+2 3
+3 4
+2 5
+5 6
+6 7
+2 8
+Custo: 37
+
+
+
+
+
+

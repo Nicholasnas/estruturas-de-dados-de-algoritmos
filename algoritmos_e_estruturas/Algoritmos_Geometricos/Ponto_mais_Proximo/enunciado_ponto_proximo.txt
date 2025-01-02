@@ -1,0 +1,25 @@
+Um jogo de realidade aumentada precisa identificar o ponto mais próximo de um usuário dentro de um 
+conjunto de pontos de interesse.
+Entradas: Primeiro um inteiro N (1 <= N <= 100), seguido por N pares de inteiros x, y (-1000 <= x, y <= 1000) 
+representando os pontos de interesse, e um par ux, uy representando a posição do usuário.
+Saídas: O par de inteiros mais próximo do usuário. Em caso de empate, apresente o ponto com menor x, 
+e se ainda for necessário, desempate com o menor y.
+Casos de teste:
+
+Exemplo de entrada 
+3 
+0 0 
+5 5 
+10 10 
+5 5
+Exemplo de saída 
+5 5
+
+Exemplo de entrada 
+2
+0 0
+2 2
+1 1	
+Exemplo de saída 
+0 0
+

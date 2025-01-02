@@ -1,0 +1,29 @@
+Soebad Saliv comprou uma propriedade em Anatricé para servir de pastagem para o seu rebanho de cordeiros. 
+Porém, ele recebeu a notícia que existem algumas reservas ecológicas  que ele precisa preservar na sua nova 
+propriedade. Ele tem a coordenada (x, y) de todas as árvores de sua propriedade e quer fazer uma cerca usando 
+o mínimo de material possível para cercar todas as árvores.
+
+Dadas a quantidade de árvores e as coordenadas x e y de cada árvore, retorne um número inteiro 
+(arredondando para cima) do número de unidades de medida de material para fazer a cerca.
+
+Exemplo de entrada 
+4
+1 1
+2 1
+2 2
+1 2
+Exemplo de saída 
+4
+
+Exemplo de entrada 
+8
+1 1
+1 2
+2 1
+2 2
+6 6
+5 6
+6 5
+5 5	
+Exemplo de saída 
+15.3137

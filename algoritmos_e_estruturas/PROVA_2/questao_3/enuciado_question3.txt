@@ -1,0 +1,54 @@
+Considerando os exercícios anteriores, faça um programa em que, dados os pontos característicos 
+(conforme a imagem abaixo) e o peso de várias tortas, calcule a espessura da massa, o diâmetro,
+ a altura da torta e, por fim o preço de cada torta. Considere que o diâmetro da circunferência 
+ da base é o mesmo do topo e a altura da torta é calculada a partir da base até o topo da torta. 
+
+O preço final PF da torta é calculado de acordo com a formula: PF = (EM*P*A+D+A), 
+onde EM é a espessura da massa, P é o peso, D é o diâmetro e A é a altura da torta. 
+Insira o código i e o preço final PF de cada torta T[i] em uma árvore binária de busca. 
+
+Após inserir todas as tortas, o usuário vai informar uma faixa de valores de preço e 
+todos as tortas com preço nessa faixa devem ser exibidas em ordem crescente (incluindo os valores limites). 
+
+
+Não se esqueça de liberar a memória alocada.  
+Entrada
+A primeira linha de entrada é um número inteiro T indicando a quantidade de tortas.
+
+Em cada linha das T linhas a seguir são informados nove valores inteiros separados por espaço. 
+Os oito primeiros valores indicam as coordenadas x e y de cada um dos pontos A, B, C e D, respectivamente. 
+O último valor indica o peso da torta. 
+
+Por fim, serão informados dois valores inteiros PFmin e PFmax indicando respectivamente o 
+valor mínimo e máximo da faixa de preço.
+
+Saída
+Na saída, o programa deve mostrar o número i e o preço PF de cada torta (no formato i:PF) que têm preço dentro da faixa [PFmin, PFmax] em ordem crescente de preço.
+
+
+Exemplo de entrada   
+4
+0 8 1 8 0 0 28 0 3
+0 7 2 7 0 0 31 0 2
+0 8 2 8 0 0 27 0 3
+0 8 2 8 0 0 26 0 2
+50 90
+
+Exemplo de saída
+0:60
+1:66
+3:66
+2:83
+
+Exemplo de entrada   
+4
+0 8 1 8 0 0 28 0 5
+0 7 2 7 0 0 31 0 3
+0 8 2 8 0 0 27 0 2
+0 8 2 8 0 0 26 0 3
+60 80
+
+Exemplo de saída
+2:67
+0:76
+1:80

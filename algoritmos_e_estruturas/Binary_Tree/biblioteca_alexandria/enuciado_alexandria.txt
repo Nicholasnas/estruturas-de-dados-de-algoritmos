@@ -1,0 +1,21 @@
+Contexto
+Imagine que você é um bibliotecário na renomada Biblioteca de Alexandria. Sua tarefa é organizar uma vasta coleção de manuscritos usando uma técnica antiga, mas incrivelmente eficaz, conhecida como Árvore Binária de Busca (BST). Cada manuscrito é representado por um número único e deve ser facilmente acessível. Seu desafio é desenvolver um sistema para inserir números de manuscritos na BST de modo que possam ser recuperados rapidamente quando pesquisados. A eficiência do seu sistema será testada através de uma série de inserções e buscas, refletindo o trabalho diário de catalogar e localizar manuscritos na biblioteca.
+
+Entradas
+Número de Operações (N): O primeiro número inteiro na entrada (1 ≤ N ≤ 100) indica quantas operações serão realizadas.
+Operações: Cada uma das próximas N linhas descreve uma operação e pode ser de dois tipos:
+i x: Insere o inteiro x, representando o número de um manuscrito, na árvore binária (onde -10^9 ≤ x ≤ 10^9).
+b x: Busca o inteiro x, o número do manuscrito, na árvore binária e retorna se o manuscrito está catalogado ou não.
+Saída
+Para cada operação de busca (b x), imprima "Sim" se o manuscrito está catalogado na árvore e "Não" se não está.
+Exemplo de entrada                               
+Exemplo de saída     
+
+5
+i 1023
+i 581
+i 2048
+b 581
+b 9999
+Sim
+Não

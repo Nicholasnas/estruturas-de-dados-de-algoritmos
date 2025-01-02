@@ -1,0 +1,65 @@
+Sua amiga Isabela anda muito atarefada ultimamente com seu novo emprego como geóloga, e quer uma forma mais
+eficiente de organizar os nomes e classificações de suas amostras de rochas. Para ajudá-la, você decidiu 
+fazer um programa que utiliza de uma árvore binária de busca, que guardará o nome e tipo de cada amostra, 
+ordenando-a por seus nomes. O programa deve permitir que Isabela insira novas amostras na árvore; pesquise 
+uma amostra pelo seu nome, mostrando todas as suas informações como resultado da pesquisa; e remova as amostras
+que foram descartadas, dados o nome e o tipo da rocha.
+
+Entrada
+
+A entrada terá 4 opções: 1 para inserir, 2 para pesquisar, 3 remover e 0 para terminar o programa.
+Na inserção serão informados o nome e o tipo da rocha, para a pesquisa, apenas o nome será dado, e para a 
+remoção o nome e o tipo da pedra devem estar de acordo com as informações contidas na árvore.
+
+Saída
+Quando uma pedra for pesquisada, mostre seu nome e tipo se for encontrada, senão, mostre a mensagem 
+"Rocha nao encontrada". Ao remover uma pedra, informe se ela foi removida com sucesso ou não. 
+Adicionalmente, se um usuário entrar com uma opção que não seja uma das quatro anteriores, 
+mostre a mensagem "Operação inválida".
+
+Exemplo de entrada
+1
+Arenito
+Sedimentar
+1
+Evaporitos
+Sedimentar
+1
+Basalto
+Magmatica
+1
+Xisto
+Metamorfica
+1
+Diabasio
+Magmatica
+1
+Calcario
+Sedimentar
+3
+Arenito
+Magmatica
+2
+Arenito
+3
+Arenito
+Sedimentar
+2
+Arenito
+0	
+
+Exemplo de saída
+Rocha nao encontrada para remocao
+Nome: Arenito
+Tipo: Sedimentar
+Rocha removida com sucesso
+Rocha nao encontrada
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+Soebad desenvolveu um sistema de visão computacional que identifica algumas características das 
+jacas que ele usa em sua receita. Ele quer usar esses dados para tomar decisões mais assertivas na 
+hora de escolher as melhores frutas.
+
+Inicialmente, dada as imagens de cada torta, ele consegue identificar oito pontos que definem o 
+contorno das frutas, como mostra a imagem abaixo. 
+
+Por fim, ele também tem um sensor que capta a quantidade de suco que tem dentro da fruta. 
+Com base nessas informações ele desenvolveu uma fórmula para definir uma pontuação para cada 
+jaca: S = (J*A+C+A) onde S é a pontuação da jaca, J é a quantidade de suco, A é a altura da jaca e 
+C é o perímetro do contorno detectado da jaca. É considerado que a altura é a maior distância entre 
+dois pontos diferentes do contorno da jaca.
+
+Sua missão é, nada um número N de jacas e as coordenadas dos pontos que delimitam o contorno de 
+cada jaca, calcular a pontuação e inserir o código i e a pontuação S de cada jaca em uma árvore binária 
+de busca e fazer uma listagem em ordem decrescente da pontuação.
+
+Entrada
+A primeira linha da entrada é um número inteiro N indicando a quantidade de jacas. 
+Cada uma das N linhas seguintes é composta por 17 números inteiros separados por espaço. 
+O primeiro desses números é a quantidade J de suco da jaca. Os demais números são as coordenadas X e Y, 
+respectivamente, de cada um dos oito pontos que definem o contorno da jaca. 
+
+Saída
+Na saída, o programa deve mostrar número i e o preço S de cada jaca (no formato i:S) em ordem decrescente 
+de pontuação.
+
+
+
+Exemplo de entrada                        
+3
+2 0 0 1 0 2 1 3 3 3 4 2 5 1 4 0 2
+3 2 0 4 1 5 3 3 5 1 4 0 2 3 0 0 1
+1 4 6 5 7 5 8 5 9 4 9 3 9 3 8 3 7
+
+Exemplo de saída     
+1:35.1988
+0:19.423
+2:16.0395

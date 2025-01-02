@@ -1,0 +1,27 @@
+Contexto:
+Uma empresa de telecomunicações deseja expandir sua rede de fibra óptica conectando várias cidades.
+ Para minimizar custos, a empresa quer usar o mínimo de cabo possível, garantindo que todas as cidades 
+ estejam conectadas.
+
+Entrada:
+A primeira linha contém dois inteiros, N e M, representando o número de cidades e o número de possíveis conexões,
+ respectivamente. As próximas M linhas contêm três inteiros cada, u, v, e c, representando uma possível 
+ conexão entre a cidade u e a cidade v com um custo c.
+
+Saída:
+O custo mínimo para conectar todas as cidades.
+
+Casos de Teste:
+
+Exemplo de entrada         
+4 6
+1 2 5
+1 3 3
+1 4 7
+2 3 4
+2 4 6
+3 4 5	
+
+Exemplo de saída:
+12
+
