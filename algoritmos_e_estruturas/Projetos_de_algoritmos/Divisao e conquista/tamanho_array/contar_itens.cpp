@@ -4,8 +4,10 @@ using namespace std;
 
 // Funcao contar itens de um vetor
 int conta_itens(int vetor[], int tam, int i){
+    // Caso base -> Tamanho do vetor
     if (i == tam)
         return 0;
+    // Caso recursivo -> Contar itens
     return 1 + conta_itens(vetor, tam, i+1 );
 }
 

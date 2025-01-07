@@ -11,29 +11,6 @@ struct pedra{
     bool escolhida;
 };
 
-float minerador(pedra pedras[], int n, float cap_peso, float cap_volume){
-    if(n < 0 || cap_peso <= 0 || cap_volume <= 0){
-        return 0;
-    }
-
-    float pegar_pedra=0, nao_pegar=0;
-    nao_pegar = minerador(pedras, n-1, cap_peso, cap_volume);
-    
-    if (cap_peso >= pedras[n].peso && cap_volume >= pedras[n].volume){
-        pegar_pedra = pedras[n].valor +
-        minerador(pedras, n-1,cap_peso - pedras[n].peso, cap_volume - pedras[n].volume);
-    }
-    if (pegar_pedra > nao_pegar){
-        pedras[n].escolhida = true;
-        return pegar_pedra;
-    }
-    else{
-        pedras[n].escolhida = false;
-        return nao_pegar;
-    }
-
-}
-
 void guloso_minerador(pedra pedras[], int n, float cap_peso, float cap_volume){
 	
 	for(int i=0; i<n; i++){

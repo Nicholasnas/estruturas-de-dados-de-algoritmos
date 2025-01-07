@@ -1,0 +1,35 @@
+Você é um minerador buscando pedras preciosas com seu carrinho e sua picareta. 
+Seu carrinho é versátil e fácil de transportar, mas ele só consegue carregar um
+ volume máximo de um metro cúbico e um peso máximo de 400 quilos. 
+
+Depois de muito procurar e quase desistir, você encontra uma caverna com várias 
+pedras de diferentes tamanhos e do lado delas uma lista com os volumes,
+ pesos e preço de cada uma delas.
+
+Você sabe que dependendo da carga que levar, pode ser que você não consiga voltar para buscar o resto.
+
+Quais pedras você levaria?
+
+Entrada: Um número inteiro N indicando quantas pedras serão informadas. Em seguida,
+ N linhas contendo o nome, o volume, o peso e o valor de cada uma das pedras.
+
+Saída: Uma lista de nomes das pedras preciosas.
+
+Exemplo de entrada
+
+5
+nome      volume peso preco
+
+Diamante 0.455 263 500
+Esmeralda 0.521 127 410
+Topázio 0.857 254 320
+Rubi 0.065 134 315
+Jade 0.012 111 280
+
+Exemplo de saída:
+
+Esmeralda
+Rubi
+Jade
+
+
