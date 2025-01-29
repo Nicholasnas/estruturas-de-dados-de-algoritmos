@@ -11,7 +11,8 @@ struct Item{
 
 int valorMaximo = 0;
 bool* melhorEscolha;
-void mochilaForcaBruta(Item* itens, int tam, int capacidade, int inicial, int pesoAtual, int valorAtual, bool* escolhidos) {
+void mochilaForcaBruta(Item* itens, int tam, int capacidade,
+ int inicial, int pesoAtual, int valorAtual, bool* escolhidos) {
     // Caso base: todos os itens foram considerados
     if (inicial == tam) {
         if (valorAtual > valorMaximo) {

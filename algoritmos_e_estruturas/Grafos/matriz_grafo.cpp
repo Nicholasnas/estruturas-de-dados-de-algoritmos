@@ -17,7 +17,6 @@ void bfs(int grafo[][MAX_VERTICES], int vertices, int origem){
 
     // criar uma fila de visitação
     fila_visitados.push_back(origem);
-
     while(!fila_visitados.empty()){
         int atual = fila_visitados.front();
         fila_visitados.pop_front();
@@ -30,11 +29,9 @@ void bfs(int grafo[][MAX_VERTICES], int vertices, int origem){
                 fila_visitados.push_back(i);
             }
         }
-        fila_visitados.pop_front();
     }
     // entender a topologia
     // verificar se o grafo é conexo pois foi possivel visitar todos os vertices
-
 
     // verificar se o grafo é conexo
     bool disconexo = false;
@@ -63,13 +60,9 @@ int main(){
     // ler as arestas
     for(int i = 0; i < arestas; i++){
         cin >> origem >> destino >> peso;
-
         grafo[origem][destino] = peso;
-
         // Se o grafo for não direcionado
-        grafo[destino][origem] = peso;
-
-        // Verifica se algum peso é diferente de 1, indicando um grafo ponderado
+        grafo[destino][origem] = peso; // Verifica se algum peso é diferente de 1, indicando um grafo ponderado
         if (peso != 1) {
             ponderado = true;
         }

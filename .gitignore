@@ -3,3 +3,7 @@
 *.exe
 *output
 *output/*
+*__pycache__
+.vscode
+*/.vscode
+*/.pytest_cache
